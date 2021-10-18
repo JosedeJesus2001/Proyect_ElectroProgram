@@ -4,6 +4,8 @@
  * 20/10/2021
  */
 #include <iostream>
+#include <array>
+#include <math.h>
 using namespace std;
 int main() {
     cout << "Este programa te ayuda a obtener valores de resistencias, voltajes y corrientes" <<endl;
@@ -11,20 +13,14 @@ int main() {
     cout<<"Si deseas hacer un análisis de circuito escribe 1 y si deseas obtener una resistencia equivalente escribe 2"<<endl;
    int Opccion;
     cin>>Opccion;
-    if (Opccion=2){
-        int nr;
-        int r;
+    if (Opccion=2){ //Aquí en ves del if podemos utilizar un switch para utilizar texto en vez de números.
+        int size; //Números de resistencias
         cout<<"¿Cuantas resistencias tienes"<<endl;
-        cin>>nr;
-        for (int i = 1; i < nr+1; ++i) {
-            cout<<"Ingresa el valor de tu resistencia " <<i<<endl; //Aquí mejor hay que poner un arreglo para
-            // que nos guarde los valores de las resistencias
+        cin>>size;
+        //Hay que hacer un arreglo que guarde aquí los valores de n cantidad de resistencias.
 
-
-        }
-
-
-    }
+            }
 
     return 0;
-}
+
+    }
