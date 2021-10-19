@@ -5,7 +5,6 @@
  */
 #include <iostream>
 #include <array>
-#include <math.h>
 using namespace std;
 int main() {
     cout << "Este programa te ayuda a obtener valores de resistencias, voltajes y corrientes" <<endl;
@@ -14,12 +13,15 @@ int main() {
    int Opccion;
     cin>>Opccion;
     if (Opccion=2){ //Aquí en ves del if podemos utilizar un switch para utilizar texto en vez de números.
-        int size; //Números de resistencias
-        cout<<"¿Cuantas resistencias tienes"<<endl;
-        cin>>size;
+        int NR; //Números de resistencias
+        cout<<"¿Cuantas resistencias tienes?"<<endl;
+        cin>>NR;
         //Hay que hacer un arreglo que guarde aquí los valores de n cantidad de resistencias.
+       
 
-            }
+        }
+
+
 
     return 0;
 
