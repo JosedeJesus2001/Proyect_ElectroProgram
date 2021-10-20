@@ -26,23 +26,25 @@ int main() {
             int rs;
             cout << "Ingresa el número de reistencias a sumar" << endl;
             cin >> rs;
-            for (int i = 1; i < rs + 1; ++i) {
-                float valorresistenciasparalelo;
-                cout << "Ingresa el valor de la resistencia " << rs + 1 << endl;
+            vector<float> resistencias;
+            float valorresistenciasparalelo;
+            float totaldenominador=1;
+            float totalnumerador=0;
+            float resistenciasequivalente;
+            for (int i = 0; i < rs; i++) {
+                cout << "Ingresa el valor de la resistencia " << i + 1 << endl;
                 cin >> valorresistenciasparalelo;
-                vector<float> resistencias;
-                resistencias.push_back();
+                resistencias.push_back(valorresistenciasparalelo);
+                totaldenominador *= resistencias[i];
+
             }
-
-
+            for (int i = 0; i <rs ; ++i) {
+                totalnumerador+=(totaldenominador/resistencias[i]);
+                cout<<totalnumerador<<endl;
+            }
+            cout <<"El valor del total denominador es "<<totaldenominador<<endl;
+            cout<<"El valor del total numerador es "<<totalnumerador<<endl;
         }
-
-
     }
-    //cout << divisor1 << endl;
-    // float resultadoparcial;
-    // resultadoparcial = (1 / divisor1);
-    //cout << "El resultado de la suma de resistencias en paralelo de este ciclo es " << resultadoparcial<< endl;
-    cout << "¿Desea almacenar ese valor para utilizarlo más tarde?" << endl;
     return 0;
 }
